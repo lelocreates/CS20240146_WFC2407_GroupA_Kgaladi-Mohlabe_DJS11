@@ -1,0 +1,313 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1{
+  color: #27ae60;
+  font-size: large;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #27ae60;
+  margin-right: 10px;
+}
+
+.navbar h1 {
+  padding: 10px;
+  color: white;
+  text-shadow: 0 -2px 4px yellowgreen;
+}
+
+.navbar img {
+  height: 50px;
+  cursor: pointer;
+  border: white;
+  border-radius: 50px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.favsearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  margin-right: 20px;
+}
+
+.home {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+.shows-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+
+.show-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.show-card:hover {
+  transform: scale(1.05);
+}
+
+.show-card__image {
+  width: 100%;
+  height: auto;
+}
+
+.show-card__details {
+  padding: 10px;
+  background-color: #f4fff4;
+}
+
+.show-card__details h3 {
+  color: #27ae60; 
+  margin-bottom: 5px;
+}
+
+
+.audio-player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #27ae60; 
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rhap_main {
+  color: #ffffff;
+}
+
+.rhap_progress-indicator {
+  background-color: #ffffff;
+}
+
+
+.episode-view {
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.episode-list {
+  list-style: none;
+  padding: 0;
+}
+
+.episode-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.episode-item h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.episode-item button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.episode-item button:hover {
+}
+
+
+.favorites {
+  padding: 20px;
+}
+
+.favorites-list {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-item {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.favorite-item h3 {
+  color: #27ae60;
+}
+
+.favorite-item button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.favorite-item button:hover {
+  background-color: #1e8449;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.genre-group {
+  margin-bottom: 20px;
+}
+
+.genre-group h2 {
+  color: #2ecc71;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  margin: 10px 0;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+
+.carousel h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2ecc71;
+}
+
+.carousel-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.carousel-item h3 {
+  margin: 10px 0;
+  color: #333;
+}
+
+
+.genre-filter {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.genre-filter select {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+
+.search-bar {
+  margin: 10px 0;
+  display: flex;
+  gap: 5px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.search-bar button {
+  padding: 5px 10px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #27ae60;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background: #2ecc71;
+  color: white;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.sidebar .toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: -60px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+}
