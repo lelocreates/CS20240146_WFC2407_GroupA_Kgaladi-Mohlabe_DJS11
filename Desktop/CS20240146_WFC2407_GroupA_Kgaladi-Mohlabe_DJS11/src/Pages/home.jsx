@@ -1,10 +1,9 @@
 // Import React and necessary hooks
 import React, { useEffect, useState } from 'react';
 // Import utility functions and components
-import { fetchShows } from '../utils/api';  // Function to fetch shows from API
-import ShowCard from '../components/showCard';  // Component to display individual show cards
-import Carousel from '../components/recCarousel';  // Carousel component for recommended shows
-import Shows from './shows';  // Component to display other parts of the page, possibly a list of shows
+import { fetchShows } from '../utils/api'; 
+import Carousel from '../components/recCarousel'; 
+import Shows from './shows';  
 
 const Home = () => {
     // State for storing fetched shows and loading state
